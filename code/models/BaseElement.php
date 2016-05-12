@@ -157,21 +157,25 @@ class BaseElement extends Widget
 
     public function canView($member = null)
     {
+        parent::canView($member);
         return Permission::check('CMS_ACCESS_CMSMain', 'any', $member);
     }
 
     public function canEdit($member = null)
     {
+        parent::canEdit($member);
         return Permission::check('CMS_ACCESS_CMSMain', 'any', $member);
     }
 
     public function canDelete($member = null)
     {
+        parent::canDelete($member);
         return Permission::check('CMS_ACCESS_CMSMain', 'any', $member);
     }
 
     public function canCreate($member = null)
     {
+        parent::canCreate($member);
         return Permission::check('CMS_ACCESS_CMSMain', 'any', $member);
     }
 
@@ -197,7 +201,8 @@ class BaseElement extends Widget
      *
      * @return HTML
      */
-    public function forTemplate($holder = true) {
+    public function forTemplate($holder = true)
+    {
         return $this->renderWith($this->class);
     }
 }
