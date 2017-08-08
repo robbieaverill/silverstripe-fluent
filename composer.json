@@ -20,6 +20,10 @@
 		"silverstripe/framework": "^4@dev",
 		"silverstripe/cms": "^4@dev"
 	},
+    "require-dev": {
+        "phpunit/phpunit": "^5.7",
+        "squizlabs/php_codesniffer": "*"
+    },
 	"extra": {
 		"branch-alias": {
 			"dev-develop": "4.0.x-dev"
